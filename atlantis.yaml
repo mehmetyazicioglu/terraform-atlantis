@@ -5,3 +5,4 @@ projects:
 - name: my-project-name
   dir: .
   workspace: default
+  delete_source_branch_on_merge: true
