@@ -24,6 +24,6 @@ variable "instance_name" {
 
 variable "instance_count" {
   description = "value of the instance count"
-  default     = "2"
+  default     = "3"
 }
 
