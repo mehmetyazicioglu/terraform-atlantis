@@ -1,4 +1,3 @@
-
 provider "aws" {
   region = var.region
   allowed_account_ids = [var.account_id]
@@ -8,11 +7,10 @@ provider "aws" {
 # no interpolation here
 terraform {
   backend "s3" {
-    bucket = " mine-tf-states "
+    bucket = "atlantis-tf-states"
     encrypt = true
-    dynamodb_table = " mine-tf-locks "
-    key = " mine-inf.tfstate "
+    dynamodb_table = "atlantis-tf-locks"
+    key = "atlantis-inf.tfstate"
     region = "us-east-1"
-    profile = " my-aws-account "
   }
 }

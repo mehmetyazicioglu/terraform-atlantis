@@ -1,3 +1,3 @@
-output "web_public_ip" {
-  value = aws_instance.web.public_ip
+output "web-address" {
+  value = "${aws_instance.web[0].public_dns}:8080 ${aws_instance.web[1].public_dns}:8080"
 }

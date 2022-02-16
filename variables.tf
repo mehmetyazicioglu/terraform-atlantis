@@ -7,24 +7,23 @@ variable "region" {
 variable "profile" {
   description = "profile to use aws creds"
   type = string
-  default = " my-aws-account "
+  default = "aws"
 }
 
 variable "account_id" {
   description = "AWS account ID"
   type = string
-  default = " 889248482628 "
+  default = "428924725037"
 }
 
-variable "http_port" {
-  description = "for HTTP requests"
-  type = string
-  default = 8080
+variable "instance_name" {
+  description = "Value of the name tag for the ec2 intance"
+  type        = string
+  default     = "ExampleAppserverInstance"
 }
 
-variable "ssh_port" {
-  description = "for SSH requests"
-  type = string
-  default = 22
+variable "instance_count" {
+  description = "value of the instance count"
+  default     = "2"
 }
 
