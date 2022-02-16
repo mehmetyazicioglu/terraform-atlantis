@@ -1,2 +1,2 @@
 # terraform-atlantis
-terraform atlantis demo .
+terraform atlantis demo ...
