@@ -4,13 +4,12 @@ provider "aws" {
   profile = var.profile
 }
 
-# no interpolation here
+
 terraform {
   backend "s3" {
-    bucket = "atlantis-tf-states"
-    encrypt = true
-    dynamodb_table = "atlantis-tf-locks"
-    key = "atlantis-inf.tfstate"
-    region = "us-east-1"
+    key            = "terraform.tfstate"
+    bucket         = "atlantis-tf-state-1"
+    region         = "us-east-1"
+    dynamodb_table = "terraform-up-and-running-locks"
   }
 }
