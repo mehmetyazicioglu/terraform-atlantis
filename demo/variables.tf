@@ -13,7 +13,7 @@ variable "profile" {
 variable "account_id" {
   description = "AWS account ID"
   type = string
-  default = "724397176020"
+  default = "519099128357"
 }
 
 variable "instance_name" {
