@@ -13,7 +13,7 @@ variable "profile" {
 variable "account_id" {
   description = "AWS account ID"
   type = string
-  default = "428924725037"
+  default = "612155163873"
 }
 
 variable "instance_name" {
@@ -24,6 +24,6 @@ variable "instance_name" {
 
 variable "instance_count" {
   description = "value of the instance count"
-  default     = "2"
+  default     = "4"
 }
 
