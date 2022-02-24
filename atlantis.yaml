@@ -2,3 +2,6 @@ version: 3
 projects:
   - dir: demo
     workspace: default
+  - dir: demo1
+    workspace: default
+ 
