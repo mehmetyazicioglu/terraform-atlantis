@@ -8,8 +8,8 @@ provider "aws" {
 terraform {
   backend "s3" {
     key            = "terraform.tfstate"
-    bucket         = "terraform-atlantis-tf"
+    bucket         = "terraform-atlantis-tf-state"
     region         = "us-east-1"
-    dynamodb_table = "terraform-atlantis-tf-lockss"
+    dynamodb_table = "terraform-atlantis-tf-state"
   }
 }
